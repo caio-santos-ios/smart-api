@@ -8,3 +8,5 @@ namespace smartbr_api_clients.Queries.Queries
         public GetAllClientQuery() { }        
     }
 }
+// isPersonFisic' because it is already being used by property '
+// isPersonFisic
