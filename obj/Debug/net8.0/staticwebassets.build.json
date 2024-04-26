@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "7gT5cLsJQtmF1IQ+Hf1MZx8OS4t5eaot9zHEdjwdcg8=",
+  "Source": "smartbr-api-clients",
+  "BasePath": "_content/smartbr-api-clients",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
