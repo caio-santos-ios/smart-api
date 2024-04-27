@@ -1,1 +1,56 @@
-obj
+# Ignore arquivos de compilação
+bin/
+obj/
+
+# Ignore arquivos de dependências do NuGet
+*.dll
+*.exe
+*.pdb
+*.dll.config
+*.cache
+*.suo
+*.user
+*.bak
+*.vspscc
+.vs/
+*_i.c
+*_p.c
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_wpftmp
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+
+# Ignorar arquivos de configuração criados pelo Visual Studio
+*.csproj.user
+*.cache
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignorar arquivos gerados pela Rider IDE
+.idea/
+
+# Ignorar arquivos de publicação da aplicação
+publish/
+
+# Ignorar o diretório de dependências do npm
+node_modules/
+>>>>>>> e2be5fb04be6dbe0fcff708165212a304669ea30
