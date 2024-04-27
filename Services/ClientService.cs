@@ -23,12 +23,6 @@ namespace smartbr_api_clients.Services
         {
             return _clientRepository.GetByIdAsync(id);
         }
-
-        public async Task<IEnumerable<Client>> GetLatestAsync()
-        {
-            return await _clientRepository.GetLatestAsync();
-        }
-
         public async Task CreateAsync(Client client)
         {
             await _clientRepository.CreateAsync(client);

@@ -54,13 +54,5 @@ namespace smartbr_api_clients.Models
 
         [BsonElement("observation")]
         public string? Observation { get; set; }
-        
-        [BsonElement("created_at")]
-        [BsonRepresentation(BsonType.DateTime)]
-        public DateTime CreatedAt { get; set; } = DateTime.Now;
-
-        [BsonElement("updated_at")]
-        [BsonRepresentation(BsonType.DateTime)]
-        public DateTime UpdatedAt { get; set; } = DateTime.Now;
     }
 }

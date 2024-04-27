@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("smartbr-api-clients")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b27f31d1fcb04e443f31f040f5f43cc079012919")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eaed0431cffbb496a19faa321bdb09b9f84fddbc")]
 [assembly: System.Reflection.AssemblyProductAttribute("smartbr-api-clients")]
 [assembly: System.Reflection.AssemblyTitleAttribute("smartbr-api-clients")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
