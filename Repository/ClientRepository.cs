@@ -23,6 +23,15 @@ namespace smartbr_api_clients.Repository
         {
             return await _clientCollection.Find(client => client.Id == id).FirstOrDefaultAsync();
         }
+
+        public async Task<IEnumerable<Client>> GetLatestAsync()
+        {
+            return await _clientCollection.Find(_ => true)
+            .SortByDescending(Client => Client.CreatedAt)
+            .Limit(5)
+            .ToListAsync();
+        }
+
         public async Task CreateAsync(Client client)
         {
             await _clientCollection.InsertOneAsync(client);

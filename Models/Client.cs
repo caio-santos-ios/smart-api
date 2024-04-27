@@ -50,5 +50,11 @@ namespace smartbr_api_clients.Models
 
         [BsonElement("observation")]
         public string? Observation { get; set; }
+
+        [BsonElement("created_at")]
+        public DateTime? CreatedAt { get; set;} = new DateTime();
+       
+        [BsonElement("updated_at")]
+        public DateTime? UpdatedAt { get; set;} = new DateTime();
     }
 }

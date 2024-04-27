@@ -11,14 +11,13 @@ namespace smartbr_api_clients.Controllers
     public class ClientController : ControllerBase
     {
         private readonly IMediator _mediator;
-        // private readonly IClientService _clientService;
         
-        public ClientController(/*IClientService clientService,*/ IMediator mediator)
+        public ClientController(IMediator mediator)
         {
-            // _clientService = clientService;
             _mediator = mediator;
         }
 
+        // QUERIES
         [HttpGet]
         public async Task<IEnumerable<Client>> GetAllAsync()
         {
@@ -34,6 +33,15 @@ namespace smartbr_api_clients.Controllers
             return await _mediator.Send(query);
         }
 
+        [HttpGet("latest")]
+        public async Task<IEnumerable<Client>> GetLatestAsync()
+        {
+            var query = new GetLatestClientQuery();
+            return await _mediator.Send(query);
+        }
+
+        
+        // COMMANDS
         [HttpPost]
         [ActionName(nameof(CreateAsync))]
         public async Task<IActionResult> CreateAsync([FromBody] Client client)
