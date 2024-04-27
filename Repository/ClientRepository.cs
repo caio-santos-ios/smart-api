@@ -16,13 +16,24 @@ namespace smartbr_api_clients.Repository
             _clientCollection = database.GetCollection<Client>("clients");
         }
         public async Task<IEnumerable<Client>> GetAllAsync()
+        
         {
             return await _clientCollection.Find(_ => true).ToListAsync();
         }
         public async Task<Client> GetByIdAsync(string id)
+        
         {
             return await _clientCollection.Find(client => client.Id == id).FirstOrDefaultAsync();
         }
+
+        // Busca os ultimos clientes
+        public async Task<IEnumerable<Client>> GetLatestAsync() {
+            return await _clientCollection.Find(_ => true)
+            .SortByDescending(client => client.CreatedAt)
+            .Limit(5)
+            .ToListAsync();
+        }
+
         public async Task CreateAsync(Client client)
         {
             await _clientCollection.InsertOneAsync(client);

@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using MediatR;
 using smartbr_api_clients.Interfaces;
 using smartbr_api_clients.Models;

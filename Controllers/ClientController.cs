@@ -11,11 +11,9 @@ namespace smartbr_api_clients.Controllers
     public class ClientController : ControllerBase
     {
         private readonly IMediator _mediator;
-        // private readonly IClientService _clientService;
         
-        public ClientController(/*IClientService clientService,*/ IMediator mediator)
+        public ClientController(IMediator mediator)
         {
-            // _clientService = clientService;
             _mediator = mediator;
         }
 
@@ -31,6 +29,12 @@ namespace smartbr_api_clients.Controllers
         public async Task<Client> GetByIdAsync(string id)
         {
             var query = new GetByIdClientQuery(id);
+            return await _mediator.Send(query);
+        }
+        [HttpGet("latest")]
+        public async Task<IEnumerable<Client>> GetLatestAsync()
+        {
+            var query = new GetLatestClientQuery();
             return await _mediator.Send(query);
         }
 

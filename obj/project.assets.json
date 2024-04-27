@@ -1362,19 +1362,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\caiod\\.nuget\\packages\\": {}
+    "C:\\Users\\King Fellaini\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\caiod\\OneDrive\\Documentos\\smart-api\\smartbr-api-clients.csproj",
+      "projectUniqueName": "C:\\Users\\King Fellaini\\OneDrive\\Documentos\\ANGULAR\\smart-api\\smartbr-api-clients.csproj",
       "projectName": "smartbr-api-clients",
-      "projectPath": "C:\\Users\\caiod\\OneDrive\\Documentos\\smart-api\\smartbr-api-clients.csproj",
-      "packagesPath": "C:\\Users\\caiod\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\caiod\\OneDrive\\Documentos\\smart-api\\obj\\",
+      "projectPath": "C:\\Users\\King Fellaini\\OneDrive\\Documentos\\ANGULAR\\smart-api\\smartbr-api-clients.csproj",
+      "packagesPath": "C:\\Users\\King Fellaini\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\King Fellaini\\OneDrive\\Documentos\\ANGULAR\\smart-api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\caiod\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\King Fellaini\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
